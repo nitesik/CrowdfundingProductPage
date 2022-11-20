@@ -1,0 +1,263 @@
+@media (min-width: 738px) {
+  .popup-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 48%, 0.5);
+    width: 100%;
+    height: 200%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .popup-content {
+    height: fit-content;
+    width: 600px;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+  }
+  
+  .popup-container .header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .popup-content img {
+    cursor: pointer;
+  }
+  
+  .popup-container input {
+    margin-top: 5px;
+  }
+  
+  .popup-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .popup-boxes {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .popup-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 7px;
+    height: fit-content;
+  }
+  
+  .popup-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .popup-box-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .popup-box-inner-header {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    
+  }
+  
+  .popup-box-inner-header-number {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .popup-box-footer {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+  }
+  
+  .popup-box-footer-active {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .popup-box .input {
+    width: 50px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: #ccc 1px solid;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .popup-box input {
+    width: 30px;
+    border: none;
+    font-weight: 700;
+  }
+  
+  .popup-box input:focus {
+    outline: none;
+  }
+  
+  .popup-box .number {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .mobile-numbers {
+    display: none;
+  }
+}
+
+@media (max-width: 737px) {
+  .popup-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 48%, 0.5);
+    height: 350vh;
+
+    width: 90%;
+    top: 0;
+    z-index: 100;
+    padding: 30px;
+  }
+  
+  .popup-content {
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: -350px;
+    padding: 30px 40px;
+  }
+
+  .popup-container .header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .popup-content img {
+    cursor: pointer;
+  }
+  
+  .popup-container input {
+    margin-top: 5px;
+  }
+
+  .popup-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .popup-boxes {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .popup-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 7px;
+    height: fit-content;
+  }
+  
+  .popup-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .popup-box-header {
+    /* display: flex; */
+    justify-content: space-between;
+  }
+  
+  .popup-box-inner-header {
+    gap: 15px;
+    
+  }
+
+  
+  .popup-box-inner-header-number {
+    display: flex;
+    /* gap: 10px; */
+    align-items: center;
+    display: none;
+  }
+  
+  .popup-box-footer {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+  }
+  
+  .popup-box-footer-active {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin: 20px 0px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .popup-box .pledge {
+    margin-bottom: 15px;
+  }
+
+  .popup-box .input {
+    width: 50px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: #ccc 1px solid;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .popup-box .input, .popup-box button {
+    margin-top: 25px;
+  }
+  
+  .popup-box input {
+    width: 30px;
+    border: none;
+    font-weight: 700;
+  }
+
+  .mobile-numbers {
+    display: flex;
+    margin-top: 20px;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .mobile-numbers .number {
+    font-size: 23px;
+    font-weight: 700;
+  }
+}

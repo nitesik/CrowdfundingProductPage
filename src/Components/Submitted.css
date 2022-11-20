@@ -1,0 +1,49 @@
+.submitted-container {
+  position: absolute;
+  height: 250%;
+  width: 100%;
+  background-color: hsl(0, 0%, 48%, 0.5);
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 738px) {
+  .inner-submitted {
+    height: 300px;
+    width: 450px;
+    padding: 20px 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 737px) {
+
+  .submitted-container {
+    height: 375vh;
+  }
+  
+  .inner-submitted {
+    height: 300px;
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    margin-top: -1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+  }
+}
